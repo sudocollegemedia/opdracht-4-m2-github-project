@@ -1,56 +1,53 @@
-html    {
-font-size: 62.5%;
-width: 100%;
-overflow-x: hidden; 
-}
-
-*{
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: rgba(40, 75, 87, 1);
-    margin: 0;
-}
-
-
-.main{
-    background-color: rgba(40, 75, 87, 1);
-}
-
-.large-text{
-    font-size: 50px;
-
-}
-.side-left{
-    position: fixed;
-    background-color: rgba(31, 57, 67, 1);
-    text-align: center;
-    
-    right: 100;
-    width: 13vw;
-    height: 100vw;
-    z-index: 1;
-    li{
-        color: #F4ECDD;
+    body {
+        font-family: system-ui, sans-serif;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: #0f172a;
+        color: #e2e8f0;
     }
 
-}
-
-#hamburger_container{
-    .burger{
-        border-bottom: 1rem solid black;
+    .box {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 12px;
+        background: #111827;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     }
-    
-}
 
-#side-furthest-left{
-    position: fixed;
-    z-index: 2;
-    background-color:#1A3038 ;
-    width: 2vw;
-    height: 100vw;
-    right: 100;
-}
+    h1 {
+        margin: 0 0 1rem;
+        font-weight: 600;
+    }
 
+    .timer {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(90px, 1fr));
+        gap: 1rem;
+    }
 
+    .unit {
+        padding: 1rem;
+        border-radius: 10px;
+        background: #1f2937;
+    }
+
+    .value {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .label {
+        font-size: 0.85rem;
+        opacity: 0.8;
+        margin-top: 0.3rem;
+    }
+
+    .done {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        color: #34d399;
+        display: none;
+    }

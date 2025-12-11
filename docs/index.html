@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>form</title>
+  <meta charset="UTF-8" />
+  <title>Countdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="main"></div>
-    <div class="side-left">
-        <span>
-            <li class="large-text">
-                <div id="hamburger_container">
-                    <span class="burger">menu</span>
-                    <span class="burger">hiiiiii</span>
-                    <span class="burger">hiiiiii</span>
-                </div>
-                menu
-            </li>
-            <li>aa</li>
-            <li>a1</li>
-            <li>a2</li>
-        </span>
-
-
-
+  <div class="box">
+    <h1>Countdown to NEW YEARS WOOOOOO</h1>
+    <div class="timer" aria-live="polite" aria-label="Countdown timer">
+      <div class="unit"><div id="days" class="value">0</div><div class="label">Days</div></div>
+      <div class="unit"><div id="hours" class="value">0</div><div class="label">Hours</div></div>
+      <div class="unit"><div id="mins" class="value">0</div><div class="label">Minutes</div></div>
+      <div class="unit"><div id="secs" class="value">0</div><div class="label">Seconds</div></div>
     </div>
-<div id="side-furthest-left"></div>
+    <div id="done" class="done">We're live!</div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-<content></content>
 </html>
