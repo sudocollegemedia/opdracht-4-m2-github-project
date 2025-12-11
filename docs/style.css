@@ -1,10 +1,10 @@
-html    {
-font-size: 62.5%;
-width: 100%;
-overflow-x: hidden; 
+html {
+    font-size: 62.5%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -14,43 +14,43 @@ body {
 }
 
 
-.main{
+.main {
     background-color: rgba(40, 75, 87, 1);
 }
 
-.large-text{
+.large-text {
     font-size: 50px;
 
 }
-.side-left{
+
+.side-left {
     position: fixed;
     background-color: rgba(31, 57, 67, 1);
     text-align: center;
-    
+
     right: 100;
     width: 13vw;
     height: 100vw;
     z-index: 1;
-    li{
+
+    li {
         color: #F4ECDD;
     }
 
 }
 
-#hamburger_container{
-    .burger{
+#hamburger_container {
+    .burger {
         border-bottom: 1rem solid black;
     }
-    
+
 }
 
-#side-furthest-left{
+#side-furthest-left {
     position: fixed;
     z-index: 2;
-    background-color:#1A3038 ;
+    background-color: #1A3038;
     width: 2vw;
     height: 100vw;
     right: 100;
 }
-
-
