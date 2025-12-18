@@ -25,6 +25,12 @@ body {
     border-radius: 1vw;
 }
 
+h1 {
+    margin-bottom: 1.3rem;
+    margin-top: -0.8rem;
+    font-weight: 600;
+}
+
 .box {
     position: absolute;
     text-align: center;
