@@ -3,6 +3,6 @@
 
 ## teamleden: 
 * Rosario (Git Master)
-* Matthew   
+* Matthew (Collaborator)
 * Charlotte
 * Timothy
