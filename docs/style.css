@@ -1,53 +1,79 @@
-    body {
-        font-family: system-ui, sans-serif;
-        display: grid;
-        place-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background: #0f172a;
-        color: #e2e8f0;
-    }
+body {
+    font-family: system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+    z-index: -1;
+}
+#background{
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 0;
 
-    .box {
-        text-align: center;
-        padding: 2rem;
-        border-radius: 12px;
-        background: #111827;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
+}
 
-    h1 {
-        margin: 0 0 1rem;
-        font-weight: 600;
-    }
+.canvas-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .timer {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(90px, 1fr));
-        gap: 1rem;
-    }
+#canvas {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 1vw;
+    z-index: 2;
+}
 
-    .unit {
-        padding: 1rem;
-        border-radius: 10px;
-        background: #1f2937;
-    }
+.box {
+    position: absolute;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    background: #111827;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
+}
 
-    .value {
-        font-size: 2.2rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-    }
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(90px, 1fr));
+    gap: 1rem;
+}
 
-    .label {
-        font-size: 0.85rem;
-        opacity: 0.8;
-        margin-top: 0.3rem;
-    }
+.unit {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #1f2937;
+}
 
-    .done {
-        font-size: 1.1rem;
-        margin-top: 1rem;
-        color: #34d399;
-        display: none;
-    }
+.value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.label {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}
+
+.done {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #34d399;
+    display: none;
+}
