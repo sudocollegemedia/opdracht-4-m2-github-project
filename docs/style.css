@@ -7,6 +7,16 @@ body {
     margin: 0;
     background: #0f172a;
     color: #e2e8f0;
+    z-index: -1;
+}
+#background{
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 0;
+
 }
 
 .canvas-wrapper {
@@ -23,6 +33,7 @@ body {
     height: 100%;
     background-color: transparent;
     border-radius: 1vw;
+    z-index: 2;
 }
 
 .box {
@@ -31,7 +42,9 @@ body {
     padding: 2rem;
     border-radius: 12px;
     background: #111827;
+    z-index: 1;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    
 }
 
 .timer {
