@@ -38,24 +38,26 @@ Snowflake.prototype.randomize = function () {
 }
 
 Snowflake.prototype.update = function (time) {
+    const buffer = 10
+
     this.x = this.baseX + Math.sin(time * this.sineSpeed + this.sineOffset) * this.sineAmplitude
     this.y += this.speed * Math.cos(this.angle)
     this.baseX += this.speed * Math.sin(this.angle)
 
-    if (this.x > canvas.width + this.size) {
-        this.baseX = -this.size
+    if (this.x > canvas.width + this.size + buffer) {
+        this.baseX = -this.size - buffer
         this.x = this.baseX
         this.randomize()
     }
 
-    if (this.x < -this.size) {
-        this.baseX = canvas.width + this.size
+    if (this.x < -this.size - buffer) {
+        this.baseX = canvas.width + this.size + buffer
         this.x = this.baseX
         this.randomize()
     }
 
-    if (this.y > canvas.height + this.size) {
-        this.y = -this.size
+    if (this.y > canvas.height + this.size + buffer) {
+        this.y = -this.size - buffer
         this.randomize()
     }
 }
